@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(./fontiran.css); 
+@import url(./material-icon.css); 
+
+
+body{
+    font-family: dana;
+}
+
+.menu-link:hover::before{
+    opacity: 0.23;
+    background-image: linear-gradient(to right, #466dfa, #fff);
+        top:0;
+        right:0;
+        width:100%;
+        height: 100%;
+        position: absolute;
+        content:''; 
+}
+
+.material-icons{
+    font-size: 14px;
+}
