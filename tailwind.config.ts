@@ -12,16 +12,11 @@ const config: Config = {
        
       },
       colors: {
-        'filter-txt-gray':'#8186ad',
-        'filter-item-gray':'#404040',
-        'footer-border':'rgba(47, 47, 48, 0.1)',
-        'footer-bg':'rgba(241, 244, 255, 0.33)',
-        'filter-box':'rgba(255, 255, 255, 0.7)',
-        'blue':'#466dfa',
-        'gray':'rgba(47, 47, 48, 0.6)',
-        'white':'#ffffff',
-        'black':'#2f2f30',
-        'light-blue':'#f1f4ff'
+        'green':'#7AE311',
+        'white-opacity':'rgba(255, 255, 255, 0.10)',
+        'blue-color':'#16BEF2',
+        'orange-color':'#FFB800',
+        
       },
       direction: {
         rtl: 'rtl',

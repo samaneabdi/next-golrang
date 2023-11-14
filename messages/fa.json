@@ -1,0 +1,32 @@
+{
+    "Index": {
+        "is-golrang-colleague": "از همکاران گروه صنعتی گلرنگ",
+        "is-work-in-golrang": "در حال حاضر در گروه صنعتی گلرنگ مشفول فعالیت",
+        "name-and-details": "ذکر نام و مشخصات",
+        "name-and-family":"نام و نام خانوادگی",
+        "phone-number":"شماره تماس",
+        "national-code":"کد ملی",
+        "report-subject":"موضوع گزارش",
+        "attach-file":"فایل ضمیمه",
+        "report-text":"متن گزارش",
+        "has-this-matter-been-informed-before":"آیا این موضوع قبلا توسط شما اطلاع رسانی شده است ؟",
+        "how":"از چه طریقی",
+        "informed-persons":"سایر افراد مطلع",
+        "security-code":"کد امنیتی",
+        "information-confidentiality-message":"اطلاعات شخصی شما به هیچ عنوان فاش نخواهد شد",
+        "site-roles":"قوانین سایت",
+        "studied":"را مطالعه کردم",
+        "submit-information":"ثبت اطلاعات",
+        "infraction-notification-system":"سامانه اطلاع رسانی تخلفات",
+        "announcing-step":"ثبت اطلاع رسانی",
+        "infraction-step":"ثبت مشخصات",
+        "tracking-step":"دریافت کد رهگیری",
+        "select-company":"انتخاب شرکت",
+        "true":"هستم",
+        "false":"نیستم",
+        "unknown":"بی نام",
+        "hasname":"با نام",
+        "yes":"بله",
+        "no":"خیر"
+      }
+}
