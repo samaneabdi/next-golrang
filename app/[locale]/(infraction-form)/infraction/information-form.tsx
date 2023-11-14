@@ -8,7 +8,7 @@ import { Company, InforemedItem } from "@/api/list-box-data";
 import { IsColleague, IsInformed, IsWorkIn, NameAndDetails } from "@/enum/enum";
 import { InfractionFormType } from "@/data-types/infraction-form-type";
 
-const InformationForm = () => {
+const InformationForm =() => {
     const t = useTranslations('Index');
 
     const [fullItem, setFullItem] = useState<InfractionFormType>({

@@ -1,9 +1,9 @@
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 
 const Announcing = ( )=>{
-    const t = useTranslations('Index');
+    // const t = useTranslations('Index');
     return(
-        <div>{t("announcing-step")}</div>
+        <div>announcing-step</div>
     )
 }
 

@@ -1,4 +1,3 @@
-import InfractionSteps from "@/app/[locale]/(infraction-form)/infraction/infractions-steps";
 import InformationForm from "./information-form";
 
 export default function UserForm() {

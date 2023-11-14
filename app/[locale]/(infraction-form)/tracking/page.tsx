@@ -1,9 +1,9 @@
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 
 const Step3 = ( )=>{
-    const t = useTranslations('Index');
+    // const t = useTranslations('Index');
     return(
-        <div>{t("tracking-step")}</div>
+        <div>tracking-step</div>
     )
 }
 
