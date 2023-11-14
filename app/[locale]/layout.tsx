@@ -3,7 +3,7 @@ import {notFound} from 'next/navigation';
 import './css/globals.css'
 
 export function generateStaticParams() {
-  return [{locale: 'en'}, {locale: 'fa'}];
+  return [{locale: 'fa'}];
 }
  
 export default async function LocaleLayout({children, params: {locale}} : {children:React.ReactNode, params:{locale:string}}) {
