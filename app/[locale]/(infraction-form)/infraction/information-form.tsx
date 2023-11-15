@@ -46,18 +46,10 @@ const InformationForm =() => {
     async function onSubmit() {        
         setIsLoading(true)
         setError(null)
-    
-        try {
-            const response = submitInfraction(fullItem);
-        } 
-        catch (error) {
-            if (error instanceof Error){
-                setError(error.message)
-                console.error(error)
-            }
-        } finally {
-            setIsLoading(false)
-        }
+
+        let errorMsg = t('failed-to-fetch');
+        submitInfraction(fullItem, setError, setIsLoading, errorMsg);
+        
     }
     
 
@@ -87,14 +79,10 @@ const InformationForm =() => {
         } 
       };
     
-    if(error){
-        return(
-            <div className="text-red">{error}</div>
-        )
-    }
 
     return(
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
+            {error && <div className="text-red">{error}</div>}
             <div className="sm:flex flex-row justify-between sm:mb-6">
                 <div className="flex flex-wrap sm:justify-between px-4 py-3 sm:ml-5 sm:py-0 mb-6 sm:mb-0 items-center sm:w-1/2 text-sm font-medium leading-10 bg-white-opacity rounded-lg">
                     <RadioButton 
