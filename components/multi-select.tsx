@@ -1,33 +1,17 @@
 'use client'
+import React from 'react';
 import { ListBoxType } from '@/data-types/list-box-type';
-import React, { useState } from 'react';
 
 type MultiSelectProps = {
   title: string,
   data:ListBoxType[],
+  value:string[],
+  handleRemove: (item:string) => void,
+  handleCheckboxChange:(event: React.FormEvent<HTMLInputElement>) => void
 
 }
 
-const MultiSelect = ({title, data} : MultiSelectProps) => {
-  const [selectedOptions, setSelectedOptions] = useState<ListBoxType[]>([]);
-
-  const handleCheckboxChange = (event: React.FormEvent<HTMLInputElement>) => {
-    const { value } = event.target as HTMLInputElement;
-    
-    if (selectedOptions.find(x=>x.id.toString().includes(value))) {
-      setSelectedOptions(selectedOptions.filter((option) => option.id.toString() !== value));
-    } else {
-      const item = data.find(x=>x.id.toString() === value);
-      if(item)
-        setSelectedOptions([...selectedOptions, item]);
-    }
-  };
-
-  const handleRemove = (item: ListBoxType) => {    
-    if (selectedOptions.includes(item)) {
-        setSelectedOptions(selectedOptions.filter((option) => option.id !== item.id));
-    } 
-  };
+const MultiSelect = ({title, data, value, handleRemove, handleCheckboxChange } : MultiSelectProps) => {
 
   const toggleMultiselect = () => {
     const dropdownOptions = document.getElementById('mySelectOptions');
@@ -40,13 +24,13 @@ const MultiSelect = ({title, data} : MultiSelectProps) => {
       <div className="relative flex items-center justify-between bg-white border rounded-lg cursor-pointer">
         <div className="px-3 py-2 text-black flex flex-wrap text-sm ">
             <div className='relative rounded-lg py-1 px-2 ml-2 font-bold '>{title}</div>
-            {selectedOptions.map((option) => (
-                <div className='flex items-center rounded-lg px-2 ml-2 bg-stone ' key={option.id}>
+            {value.map((option) => (
+                <div className='flex items-center rounded-lg px-2 ml-2 bg-stone ' key={option}>
                     <span onClick={() => handleRemove(option)} className="material-symbols-outlined text-sm text-red-secondry ml-3">
                         close
                     </span>
                     <div>
-                        {option.name}
+                        {data.find((e) => e.id.toString() == option)?.name}
                     </div>
                 </div>
             ))}
@@ -59,7 +43,7 @@ const MultiSelect = ({title, data} : MultiSelectProps) => {
       <div id="mySelectOptions" className='w-full h-28 bg-white text-black rounded-lg p-3 hidden'>
             {data.map((option) => (
                 <div key={option.id} className='flex flex-wrap text-sm'>
-                    <input className='ml-3' type="checkbox" id={option.id.toString()} value={option.id} onChange={handleCheckboxChange} checked={selectedOptions.includes(option)} />
+                    <input className='ml-3' type="checkbox" id={option.id.toString()} value={option.id} onChange={handleCheckboxChange} checked={value.includes(option.id.toString())} />
                     <label>
                         {option.name}
                     </label>

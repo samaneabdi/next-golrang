@@ -10,7 +10,7 @@
         "attach-file":"فایل ضمیمه",
         "report-text":"متن گزارش",
         "has-this-matter-been-informed-before":"آیا این موضوع قبلا توسط شما اطلاع رسانی شده است ؟",
-        "how":"از چه طریقی",
+        "informedItem":"از چه طریقی",
         "informed-persons":"سایر افراد مطلع",
         "security-code":"کد امنیتی",
         "information-confidentiality-message":"اطلاعات شخصی شما به هیچ عنوان فاش نخواهد شد",
@@ -29,6 +29,7 @@
         "yes":"بله",
         "no":"خیر",
         "field-is-required":"این فیلد اجباری است",
-        "loading":"درحال ذخیره"
+        "loading":"درحال ذخیره",
+        "select-report-company":"انتخاب شرکتی که گزارش در مورد آن نوشته خواهد شد"
       }
 }

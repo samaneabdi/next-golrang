@@ -8,10 +8,11 @@ export type InfractionFormType = {
     reportText: string,
     securityCode: string,
     role: boolean,
-    inforemedItem: Number,
-    company:Number,
+    inforemedItem: string,
+    company:string,
     isColleage: string,
     isWorkIn: string,
     isInformed: string,
-    nameAndDetails:string
+    nameAndDetails:string,
+    people:string[]
 }
