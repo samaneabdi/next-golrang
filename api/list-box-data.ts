@@ -10,5 +10,11 @@ export const Company: ListBoxType[] = [
 export const InforemedItem: ListBoxType[] = [
     { id:1, name:'ایمیل سازمان'},
     { id:2, name:'سامانه ثبت تخلف'},
+]
+
+export const People: ListBoxType[] = [
+    { id:1, name:'علی هاشمی'},
+    { id:2, name:'ستاره مرادی'},
+    { id:3, name:'محمد شعاری'},
 
 ]

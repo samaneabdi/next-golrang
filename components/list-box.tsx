@@ -16,7 +16,7 @@ const ListBox = ({title, data, value, onChange} : ListBoxProps) =>{
             id="countries"
             value={value }
             onChange={onChange}
-            className="font-bold text-sm sm:ml-3 sm:w-1/2 w-full mb-6 sm:mb-0 p-2 border border-gray-300 text-gray-900 rounded-lg">
+            className="font-bold text-sm sm:ml-3 sm:w-1/2 w-full mb-6 sm:mb-0 p-2 border focus:border-0 active:border-0 border-gray-300 text-gray-900 rounded-lg">
             <option value='' hidden selected>{t(title)}</option>
             {data.map((item) => (
                 <option key={item.id} value={item.id}>{item.name}</option>
