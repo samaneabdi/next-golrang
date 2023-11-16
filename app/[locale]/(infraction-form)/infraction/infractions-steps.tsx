@@ -2,7 +2,6 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 const InfractionSteps = () =>{
-
     const t = useTranslations('Index');
     
     return(

@@ -1,4 +1,3 @@
-
 export type InfractionFormType = {
     name: string,
     phoneNumber: string,

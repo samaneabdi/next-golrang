@@ -14,3 +14,4 @@ export enum IsInformed {
     YES = 'yes',
     NO = 'no'
 }
+

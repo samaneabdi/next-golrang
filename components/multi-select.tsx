@@ -8,7 +8,6 @@ type MultiSelectProps = {
   value:string[],
   handleRemove: (item:string) => void,
   handleCheckboxChange:(event: React.FormEvent<HTMLInputElement>) => void
-
 }
 
 const MultiSelect = ({title, data, value, handleRemove, handleCheckboxChange } : MultiSelectProps) => {

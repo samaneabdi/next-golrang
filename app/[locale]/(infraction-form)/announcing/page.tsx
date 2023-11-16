@@ -1,7 +1,7 @@
 
 const Announcing = ( )=>{
     return(
-        <div>announcing</div>
+        <div> announcing </div>
     )
 }
 

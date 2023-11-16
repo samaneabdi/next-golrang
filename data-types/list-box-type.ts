@@ -1,5 +1,4 @@
 export type ListBoxType = {
     id:number,
-    name:string
-    
+    name:string  
 }

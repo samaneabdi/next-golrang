@@ -1,9 +1,9 @@
 'use client'
-import {FormEvent, useState} from "react";
+import { useState } from "react";
 import ValidateIcon from "@/components/validate-icon";
 import ListBox from "../../../../components/list-box";
 import RadioButton from "../../../../components/radio-button";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { Company, InforemedItem, People } from "@/api/list-box-data";
 import { IsColleague, IsInformed, IsWorkIn, NameAndDetails } from "@/enum/enum";
 import { InfractionFormType } from "@/data-types/infraction-form-type";
@@ -52,7 +52,6 @@ const InformationForm =() => {
         
     }
     
-
     const handleCheckboxChange = (event: React.FormEvent<HTMLInputElement>) => {
         const { value } = event.target as HTMLInputElement;
         let item;

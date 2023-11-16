@@ -1,7 +1,7 @@
 
 const Step3 = ( )=>{
     return(
-        <div>tracking</div>
+        <div> tracking </div>
     )
 }
 

@@ -10,6 +10,7 @@ type ListBoxProps ={
     value:string,
     isRequired:boolean
 }
+
 const ListBox = ({register, title, data, value, onChange, isRequired} : ListBoxProps) =>{
     const t = useTranslations('Index');
 

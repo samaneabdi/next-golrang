@@ -18,7 +18,7 @@ export default async function LocaleLayout({children, params: {locale}} : {child
   return (
     <html lang={locale}>
       <body dir='rtl'>
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider locale={locale}  messages={messages}>
             {children}
           </NextIntlClientProvider>
       </body>
